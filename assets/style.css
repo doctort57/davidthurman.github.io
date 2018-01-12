@@ -1,0 +1,190 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: block;
+  font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url("http://img.freepik.com/free-photo/white-wall_1194-5956.jpg?size=338&ext=jpg");
+  z-index: 0;
+}
+
+header {
+  padding: 10, 10, 0, 10;
+  background: #ffffff;
+  margin: 0px auto;
+  border-bottom: 4px solid darkgray;
+  display: flex;
+}
+li {
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+img {
+  border: 2px solid #cccccc;
+}
+p {
+  font-color: #777777;
+  font-size: 18px;
+  font-style: serif;
+  word-wrap: normal|break-word|initial|inherit;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px, 12px, 10px, 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    font: bold;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #4aaaa5;
+}
+
+#contact {
+  background-color: #ffffff;
+  color: #777777;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid darkgray;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 45%;
+  width: 200px;
+  position: absolute;
+  top: 130px;
+  left: 800px;
+}
+#action {
+  padding: 30px
+  margin: 20px;
+  font-size: 18px;
+  font-style: bold;
+  color: darkgray;
+}
+#portfolio {
+  font-size: 30px;
+  font-family: serif;
+  float: both;
+  margin: 20px;
+}
+#Top-left {
+  background-color: #4aaaa5;
+  padding: 15px;
+  margin: 15px;
+  width: 50%;
+  overflow:auto;
+  border: 1px solid darkgray;
+}
+#Top-right {
+  background-color: #4aaaa5;
+  padding: 15px;
+  margin: 15px;
+  width: 50%;
+  overflow:auto;
+  border: 1px solid darkgray;
+}
+#Middle-left {
+  background-color: #4aaaa5;
+  padding: 15px;
+  margin: 15px;
+  width: 50%;
+  overflow:auto;
+  border: 1px solid darkgray;
+}
+#Middle-right {
+  background-color: #4aaaa5;
+  padding: 15px;
+  margin: 15px;
+  width: 50%;
+  overflow:auto;
+  border: 1px solid darkgray;
+}
+#Bottom-left {
+  background-color: #4aaaa5;
+  padding: 15px;
+  margin: 15px;
+  width: 50%;
+  overflow:auto;
+  border: 1px solid darkgray;
+}
+
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.logo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 100px;
+  position: relative;
+  background: #4aaaa5;
+  font-size: 16px;
+  color: white;
+  font-family: Times, serif;
+  border: 4px solid darkgray;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: white;
+    padding: 45px;
+    margin-left: 400px;
+}
+.container {
+  border: 4px solid darkgray;
+  background-color: #ffffff;
+  color: #777777;
+  margin-top: 80px;
+  margin-right: 45%;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 150px;
+  clear:both;
+  padding: 40px;
+  border-top: 6px solid #4aaaa5;
+  text-align: center;
+  font-size: 16px;
+  background: #666666;
+  color: #ffffff;
+  background-color: #666666;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
