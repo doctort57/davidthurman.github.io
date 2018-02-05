@@ -81,7 +81,7 @@ body {
   -webkit-tap-highlight-color: #222222; }
 
 #contact{
-  background-color: #EEE8AA;
+  background-color: #F5DEB3;
 }
 
 #services{
@@ -110,7 +110,8 @@ body {
     text-transform: uppercase;
     color: black; 
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
-
+/*    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+     color: #f05f40; } */
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
@@ -118,7 +119,7 @@ body {
     color: #222222; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
     text-transform: uppercase;
     color: #222222; }
@@ -137,14 +138,14 @@ body {
       border-color: rgba(255, 255, 255, 0.3);
       background-color: transparent; }
       #mainNav .navbar-brand {
- 
-          color: red; }
+ /*       color: rgba(255, 255, 255, 0.7); } */
+          color: white; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: red; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  
-          color: white;
+  /*      color: rgba(255, 255, 255, 0.7); } */
+          color: #6495ED;
         #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
           color: black; }
@@ -152,7 +153,7 @@ body {
         border-color: rgba(34, 34, 34, 0.05);
         background-color: white; }
         #mainNav.navbar-shrink .navbar-brand {
-          font-size: 20px;
+          font-size: 16px;
           color: #F05F40; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
             color: #f05f40; }
@@ -181,11 +182,11 @@ header.masthead {
     padding: 150px 15px 100px;
     text-align: center; }
     header.masthead .header-content .header-content-inner h1 {
-      font-size: 25px;
-      font-weight: 800;
+      font-size: 30px;
+      font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
-      color: lightblue;
+      color: white;
       text-transform: uppercase; }
     header.masthead .header-content .header-content-inner hr {
       margin: 30px auto; }
@@ -370,7 +371,7 @@ header.masthead {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
-  padding: 15px 20px; }
+  padding: 15px 30px; }
 
 .img-scales{
   max-width: auto;
@@ -380,4 +381,3 @@ header.masthead {
 .hx4{
   color: black;
 }
-
