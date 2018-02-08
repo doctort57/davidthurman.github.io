@@ -1,56 +1,64 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Andrea Pinillos</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    
+       <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/css/style.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link href="css/creative.css" rel="stylesheet">
+  <title>Contact David Thurman</title>
 </head>
+
 <body>
-  
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Andrea Pinillos</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-      <form method=POST action="mailto:dvdthurman@gmail.com" enctype="text/plain">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="dvdthurman@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-    </section>
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-       <a href="https://github.com/andreapinillos" target="_blank"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/andreapinillos/" target="_blank"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
-        <a href="mailto:andreapinillos1@gmail.com" target="_blank"><img src="./assets/images/email.png" alt="email"></a>
-    </section>
+   <form id="gform" method="POST" class="pure-form pure-form-stacked contact" data-email="dvdthurman@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbzteGYgEJ1rfhhV2QOONYZEgJ376gIxdK3xQQ7ZACGdsQbAE0tv/exec">
+    <!-- change the form action to your script url -->
+    <h2 class="content-head  text-center h2">Contact David Thurman</h2>
+
+    <fieldset class="pure-group fieldset ">
+      <label for="email"><em>Your</em> Email Address</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group fieldset">
+      <label for="name">Name </label>
+      <input id="name" name="name" placeholder="Your Name" />
+    </fieldset>
+
+    <fieldset class="pure-group fieldset">
+      <label for="message">Message </label>
+      <textarea id="message" name="message" rows=10"
+      placeholder="Your Message..."></textarea>
+    </fieldset>
+
+     
+     <fieldset class="pure-group fieldset">
+    <button id="btn" class="pure-button btn btn-primary btn-xl ">
+      <i class="fa "></i>&nbsp;Send Mail</button>
+    </fieldset>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting me!
+      I will get back to you soon!</h2>
   </div>
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Andrea Pinillos
-    </div>
-  </footer>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
 </body>
 </html>
